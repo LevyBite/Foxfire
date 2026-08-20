@@ -26,6 +26,9 @@ const postsRouter = factory
 						})
 					)?.id
 				: undefined;
+			if (author && !authorId) {
+				return c.json([]);
+			}
 
 			return c.json(
 				await handlers.getPosts(
