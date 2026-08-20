@@ -2,13 +2,11 @@
 
 A website where you can post your own Gaming Videos, status updates, and review games. (Znko.dev rewrite)
 
-## 🛠️ Setup & Installation
+## Getting Started
 
-### Prerequisites
-Make sure you have Node.js and `pnpm` installed.
+Make sure you have [Bun](https://bun.sh) installed on your machine.
 
-### Run Locally
+### Installation
 
-1. Install dependencies from root:
-   ```bash
-   pnpm install
+```bash
+bun install
