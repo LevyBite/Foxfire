@@ -39,6 +39,8 @@ export async function getPosts(
 
 			return and(...conditions);
 		},
+		limit: 50,
+		orderBy: (r, { desc }) => [desc(r.pinned), desc(r.createdAt)],
 		columns: {
 			createdAt: true,
 			nanoid: true,
