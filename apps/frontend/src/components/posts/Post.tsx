@@ -41,7 +41,7 @@ export function PostCard({
 						<Spinner /> Deleting...
 					</div>
 				)}
-				<div className="flex-1 p-4">{postData.text}</div>
+				<div className="flex-1 p-4 whitespace-pre-wrap">{postData.text}</div>
 			</div>
 
 			<div className="flex flex-row items-center border-t justify-between gap-2 px-2 py-2 bg-transparent">
