@@ -31,6 +31,7 @@ export function PostCard({
 		const postUrl = new URL(window.location.href);
 		postUrl.searchParams.set("id", postData.nanoid);
 		navigator.clipboard.writeText(postUrl.toString());
+		toast.add({ title: "Link copied to clipboard!", type: "success" });
 	};
 
 	return (
@@ -47,7 +48,11 @@ export function PostCard({
 			<div className="flex flex-row items-center border-t justify-between gap-2 px-2 py-2 bg-transparent">
 				<span className="flex flex-row justify-center items-center gap-1">
 					{postData.author.image ? (
-						<img alt="Avatar" src={postData.author.image} />
+						<img
+							alt="Avatar"
+							src={postData.author.image}
+							className="size-8 rounded-full object-cover"
+						/>
 					) : (
 						<User />
 					)}

@@ -44,6 +44,7 @@ export function Posts() {
 				<Input
 					placeholder="Search posts..."
 					onChange={(e) => setSearch(e.target.value)}
+					value={search}
 					className="w-full sm:w-1/3"
 				/>
 				{session && (
